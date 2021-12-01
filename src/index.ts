@@ -3,7 +3,7 @@
  * @Usage: 
  * @Author: richen
  * @Date: 2021-12-01 14:27:47
- * @LastEditTime: 2021-12-01 16:19:27
+ * @LastEditTime: 2021-12-01 16:41:32
  */
 import * as globby from "globby";
 import path from "path";
@@ -19,7 +19,7 @@ interface ResInterface {
     target: any;
 }
 // callbackFunc function
-type callbackFunc = (fileName: string, target: any, xpath: string) => void;
+type callbackFunc = (fileName: string, xpath: string, target: any) => void;
 
 /**
  * Load
