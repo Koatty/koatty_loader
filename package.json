@@ -1,6 +1,6 @@
 {
   "name": "koatty_loader",
-  "version": "1.0.0",
+  "version": "1.0.2",
   "description": "Efficient glob library for Koatty.",
   "scripts": {
     "build": "del-cli --force dist && tsc",
