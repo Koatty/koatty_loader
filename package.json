@@ -6,7 +6,7 @@
     "build": "del-cli --force dist && tsc",
     "eslint": "eslint --ext .ts,.js ./",
     "prepublishOnly": "npm test && npm run build",
-    "release": "standard-version -f",
+    "release": "npm run prepublishOnly && standard-version",
     "pub": "git push --follow-tags origin && npm publish",
     "test": "npm run eslint && jest --passWithNoTests",
     "test:cov": "jest --collectCoverage --detectOpenHandles",
@@ -14,7 +14,7 @@
   },
   "main": "./dist/index.js",
   "engines": {
-    "node": ">10.0.0"
+    "node": ">12.0.0"
   },
   "author": "",
   "license": "BSD-3-Clause",
