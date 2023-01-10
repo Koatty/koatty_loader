@@ -3,9 +3,9 @@
  * @Usage: 
  * @Author: richen
  * @Date: 2021-12-01 14:27:47
- * @LastEditTime: 2023-01-10 09:49:55
+ * @LastEditTime: 2023-01-10 16:56:58
  */
-import { globbySync } from "globby";
+import globby from "globby";
 import path from "path";
 
 /**
@@ -47,7 +47,7 @@ export function Load(loadDir: string[],
 
     for (let dir of loadDirs) {
         dir = buildLoadDir(baseDir, dir);
-        const fileResults = globbySync(pattern, {
+        const fileResults = globby.sync(pattern, {
             cwd: dir,
             ignore: ignore,
         });
