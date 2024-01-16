@@ -7,7 +7,7 @@
 Load
 
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export declare function Load(loadDir: string[], baseDir?: string, fn?: callbackFunc, pattern?: string[], ignore?: string[]): ResInterface[];
@@ -18,12 +18,12 @@ export declare function Load(loadDir: string[], baseDir?: string, fn?: callbackF
 |  Parameter | Type | Description |
 |  --- | --- | --- |
 |  loadDir | string\[\] |  |
-|  baseDir | string | <i>(Optional)</i> |
-|  fn | callbackFunc | <i>(Optional)</i> |
-|  pattern | string\[\] | <i>(Optional)</i> |
-|  ignore | string\[\] | <i>(Optional)</i> |
+|  baseDir | string | _(Optional)_ |
+|  fn | callbackFunc | _(Optional)_ |
+|  pattern | string\[\] | _(Optional)_ |
+|  ignore | string\[\] | _(Optional)_ |
 
-<b>Returns:</b>
+**Returns:**
 
 ResInterface\[\]
 

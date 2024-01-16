@@ -8,5 +8,5 @@
 
 |  Function | Description |
 |  --- | --- |
-|  [Load(loadDir, baseDir, fn, pattern, ignore)](./koatty_loader.load.md) | Load |
+|  [Load(loadDir, baseDir, fn, pattern, ignore)](./koatty_loader.load.md) | <p>Load</p> |
 
