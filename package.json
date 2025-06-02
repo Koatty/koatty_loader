@@ -19,7 +19,8 @@
     "pub": "git push --follow-tags origin && npm publish",
     "test": "npm run eslint && jest --passWithNoTests",
     "test:cov": "jest --collectCoverage --detectOpenHandles",
-    "version": "conventional-changelog -p angular -i CHANGELOG.md -s"
+    "version": "conventional-changelog -p angular -i CHANGELOG.md -s",
+    "verify-globby": "node scripts/upgrade-globby.js"
   },
   "main": "./dist/index.js",
   "exports": {
@@ -47,7 +48,7 @@
     "copyfiles": "^2.x.x",
     "del-cli": "^5.x.x",
     "eslint": "^8.x.x",
-    "eslint-plugin-jest": "^27.x.x",
+    "eslint-plugin-jest": "^28.x.x",
     "husky": "^4.x.x",
     "jest": "^29.x.x",
     "jest-html-reporters": "^3.x.x",
@@ -61,7 +62,7 @@
     "typescript": "^5.x.x"
   },
   "dependencies": {
-    "globby": "^11.1.0",
+    "globby": "11.1.0",
     "koatty_lib": "^1.x.x"
   },
   "peerDependencies": {
