@@ -4,7 +4,7 @@
 
 ## Load() function
 
-Load
+动态加载指定目录下的模块文件
 
 
 **Signature:**
@@ -17,13 +17,32 @@ export declare function Load(loadDir: string[], baseDir?: string, fn?: callbackF
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  loadDir | string\[\] |  |
-|  baseDir | string | _(Optional)_ |
-|  fn | callbackFunc | _(Optional)_ |
-|  pattern | string\[\] | _(Optional)_ |
-|  ignore | string\[\] | _(Optional)_ |
+|  loadDir | string\[\] | 要扫描的目录数组，支持相对路径和绝对路径 |
+|  baseDir | string | _(Optional)_ 基础目录，默认为当前工作目录 |
+|  fn | callbackFunc | _(Optional)_ 可选的回调函数，每加载一个模块时调用 |
+|  pattern | string\[\] | _(Optional)_ 文件匹配模式，默认为js和ts文件 |
+|  ignore | string\[\] | _(Optional)_ 忽略的目录模式 |
 
 **Returns:**
 
 ResInterface\[\]
+
+{<!-- -->ResInterface\[\]<!-- -->} 加载的模块信息数组
+
+## Exceptions
+
+{<!-- -->Error<!-- -->} 当参数验证失败或目录不存在时抛出错误
+
+## Example
+
+
+```typescript
+// 加载controllers目录下的所有模块
+const modules = Load(['./controllers'], __dirname);
+
+// 使用回调函数处理每个模块
+Load(['./services'], __dirname, (fileName, filePath, target) => {
+  console.log(`Loaded ${fileName} from ${filePath}`);
+});
+```
 

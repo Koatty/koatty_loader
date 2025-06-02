@@ -8,5 +8,5 @@
 
 |  Function | Description |
 |  --- | --- |
-|  [Load(loadDir, baseDir, fn, pattern, ignore)](./koatty_loader.load.md) | <p>Load</p> |
+|  [Load(loadDir, baseDir, fn, pattern, ignore)](./koatty_loader.load.md) | <p>动态加载指定目录下的模块文件</p> |
 

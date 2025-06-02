@@ -307,6 +307,7 @@ npm run eslint
 ## 🔗 相关链接
 
 - [KOATTY 框架](https://github.com/koatty/koatty)
+- [使用示例](docs/examples.md) - 详细的使用示例和最佳实践
 - [Globby](https://github.com/sindresorhus/globby)
 - [变更日志](CHANGELOG.md)
 
