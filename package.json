@@ -1,6 +1,6 @@
 {
   "name": "koatty_loader",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "description": "Efficient glob library for Koatty.",
   "scripts": {
     "build": "npm run build:js && npm run build:dts && npm run build:doc && npm run build:cp",
@@ -12,14 +12,9 @@
     "lock": "npm i --package-lock-only",
     "prepublishOnly": "npm test && npm run build",
     "prerelease": "npm test && npm run build",
-    "release": "standard-version",
-    "release:pre": "npm run release -- --prerelease",
-    "release:major": "npm run release -- --release-as major",
-    "release:minor": "npm run release -- --release-as minor",
     "pub": "git push --follow-tags origin && npm publish",
     "test": "npm run eslint && jest --passWithNoTests",
-    "test:cov": "jest --collectCoverage --detectOpenHandles",
-    "version": "conventional-changelog -p angular -i CHANGELOG.md -s"
+    "test:cov": "jest --collectCoverage --detectOpenHandles"
   },
   "main": "./dist/index.js",
   "exports": {
@@ -62,9 +57,9 @@
   },
   "dependencies": {
     "globby": "^11.1.0",
-    "koatty_lib": "^1.x.x"
+    "koatty_lib": "workspace:*"
   },
   "peerDependencies": {
-    "koatty_lib": "^1.x.x"
+    "koatty_lib": "workspace:*"
   }
 }
