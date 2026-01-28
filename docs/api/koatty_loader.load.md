@@ -15,13 +15,101 @@ export declare function Load(loadDir: string[], baseDir?: string, fn?: callbackF
 
 ## Parameters
 
-|  Parameter | Type | Description |
-|  --- | --- | --- |
-|  loadDir | string\[\] |  |
-|  baseDir | string | _(Optional)_ |
-|  fn | callbackFunc | _(Optional)_ |
-|  pattern | string\[\] | _(Optional)_ |
-|  ignore | string\[\] | _(Optional)_ |
+<table><thead><tr><th>
+
+Parameter
+
+
+</th><th>
+
+Type
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+loadDir
+
+
+</td><td>
+
+string\[\]
+
+
+</td><td>
+
+
+</td></tr>
+<tr><td>
+
+baseDir
+
+
+</td><td>
+
+string
+
+
+</td><td>
+
+_(Optional)_
+
+
+</td></tr>
+<tr><td>
+
+fn
+
+
+</td><td>
+
+callbackFunc
+
+
+</td><td>
+
+_(Optional)_
+
+
+</td></tr>
+<tr><td>
+
+pattern
+
+
+</td><td>
+
+string\[\]
+
+
+</td><td>
+
+_(Optional)_
+
+
+</td></tr>
+<tr><td>
+
+ignore
+
+
+</td><td>
+
+string\[\]
+
+
+</td><td>
+
+_(Optional)_
+
+
+</td></tr>
+</tbody></table>
 
 **Returns:**
 

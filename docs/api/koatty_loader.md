@@ -6,7 +6,28 @@
 
 ## Functions
 
-|  Function | Description |
-|  --- | --- |
-|  [Load(loadDir, baseDir, fn, pattern, ignore)](./koatty_loader.load.md) | <p>Load</p> |
+<table><thead><tr><th>
+
+Function
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[Load(loadDir, baseDir, fn, pattern, ignore)](./koatty_loader.load.md)
+
+
+</td><td>
+
+Load
+
+
+
+</td></tr>
+</tbody></table>
 

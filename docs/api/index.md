@@ -6,7 +6,25 @@
 
 ## Packages
 
-|  Package | Description |
-|  --- | --- |
-|  [koatty\_loader](./koatty_loader.md) |  |
+<table><thead><tr><th>
+
+Package
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[koatty\_loader](./koatty_loader.md)
+
+
+</td><td>
+
+
+</td></tr>
+</tbody></table>
 
