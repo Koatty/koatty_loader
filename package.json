@@ -57,7 +57,7 @@
   },
   "dependencies": {
     "globby": "^11.1.0",
-    "koatty_lib": "^1.4.5"
+    "koatty_lib": "workspace:*"
   },
   "peerDependencies": {
     "koatty_lib": "^1.4.5"
