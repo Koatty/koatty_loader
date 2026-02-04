@@ -24,8 +24,59 @@ Description
 
 </td><td>
 
-Load
+Load modules from directories by glob pattern.
 
+
+</td></tr>
+</tbody></table>
+
+## Interfaces
+
+<table><thead><tr><th>
+
+Interface
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[ResInterface](./koatty_loader.resinterface.md)
+
+
+</td><td>
+
+Result item for each loaded file.
+
+
+</td></tr>
+</tbody></table>
+
+## Type Aliases
+
+<table><thead><tr><th>
+
+Type Alias
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[callbackFunc](./koatty_loader.callbackfunc.md)
+
+
+</td><td>
+
+Callback invoked for each loaded file: (fileName, filePath, exportedTarget)
 
 
 </td></tr>

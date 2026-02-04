@@ -1,11 +1,13 @@
 /**
- * 
+ *
  */
+const path = require('path');
+
 module.exports = {
   root: true,
   parser: '@typescript-eslint/parser',
   extends: [
-    'plugin:@typescript-eslint/recommended', // 使用@typescript-eslint/eslint-plugin的推荐规则
+    'plugin:@typescript-eslint/recommended',
     'plugin:jest/recommended',
   ],
   plugins: [
@@ -13,7 +15,7 @@ module.exports = {
     'jest',
   ],
   parserOptions: {
-    project: './tsconfig.json',
+    project: path.join(__dirname, 'tsconfig.json'),
   },
   env: {
     node: true,

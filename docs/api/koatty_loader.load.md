@@ -4,8 +4,7 @@
 
 ## Load() function
 
-Load
-
+Load modules from directories by glob pattern.
 
 **Signature:**
 
@@ -43,6 +42,8 @@ string\[\]
 
 </td><td>
 
+Directories to load (relative to baseDir or absolute)
+
 
 </td></tr>
 <tr><td>
@@ -57,7 +58,7 @@ string
 
 </td><td>
 
-_(Optional)_
+_(Optional)_ Base directory; defaults to process.cwd()
 
 
 </td></tr>
@@ -68,12 +69,12 @@ fn
 
 </td><td>
 
-callbackFunc
+[callbackFunc](./koatty_loader.callbackfunc.md)
 
 
 </td><td>
 
-_(Optional)_
+_(Optional)_ Optional callback per file
 
 
 </td></tr>
@@ -89,7 +90,7 @@ string\[\]
 
 </td><td>
 
-_(Optional)_
+_(Optional)_ Glob patterns; defaults to JS/TS excluding .d.ts
 
 
 </td></tr>
@@ -105,7 +106,7 @@ string\[\]
 
 </td><td>
 
-_(Optional)_
+_(Optional)_ Glob ignore patterns; defaults to node\_modules, logs, static
 
 
 </td></tr>
@@ -113,5 +114,7 @@ _(Optional)_
 
 **Returns:**
 
-ResInterface\[\]
+[ResInterface](./koatty_loader.resinterface.md)<!-- -->\[\]
+
+Array of `\{ name, path, target \}` for each loaded file
 
