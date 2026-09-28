@@ -32,14 +32,10 @@ module.exports = {
     "@typescript-eslint/no-empty-function": "off",
     "@typescript-eslint/no-empty-interface": "off",
     "@typescript-eslint/explicit-module-boundary-types": "off",
-    "@typescript-eslint/ban-types": ["error",
-      {
-        "types": {
-          "Object": false,
-          "Function": false,
-        },
-        "extendDefaults": true
-      }
-    ],
+    // @typescript-eslint v8 removed `ban-types` (it made every lint run fail
+    // with "Definition for rule '@typescript-eslint/ban-types' was not found").
+    // The old config only disabled the ban on `Object`/`Function`, i.e. it kept
+    // the rule permissive, so the v8 successor is reported as a warning.
+    "@typescript-eslint/no-unsafe-function-type": "warn",
   },
 };

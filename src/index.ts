@@ -91,7 +91,7 @@ function buildLoadDir(baseDir: string, dir: string): string {
  * @returns
  */
 function requireDefault(p: string) {
-    /* eslint-disable global-require */
+    /* eslint-disable global-require, @typescript-eslint/no-require-imports */
     const ex = require(p);
     return (ex && (typeof ex === "object") && "default" in ex) ? ex.default : ex;
 }
