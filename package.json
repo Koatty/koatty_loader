@@ -44,7 +44,8 @@
   },
   "dependencies": {
     "globby": "^11.1.0",
-    "koatty_lib": "workspace:*"
+    "koatty_lib": "workspace:*",
+    "picomatch": "^4.0.3"
   },
   "peerDependencies": {
     "koatty_lib": "^1.6.0"

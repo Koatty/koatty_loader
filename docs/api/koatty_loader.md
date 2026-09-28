@@ -19,12 +19,32 @@ Description
 </th></tr></thead>
 <tbody><tr><td>
 
-[Load(loadDir, baseDir, fn, pattern, ignore)](./koatty_loader.load.md)
+[buildLoadDir(baseDir, dir)](./koatty_loader.buildloaddir.md)
+
+
+</td><td>
+
+
+</td></tr>
+<tr><td>
+
+[Load(loadDir, baseDir, fn, pattern, ignore, options)](./koatty_loader.load.md)
 
 
 </td><td>
 
 Load modules from directories by glob pattern.
+
+
+</td></tr>
+<tr><td>
+
+[toSafePath(baseDir, target)](./koatty_loader.tosafepath.md)
+
+
+</td><td>
+
+SEC-16: report paths relative to `base`<!-- -->, so absolute host paths outside the project are never logged or returned.
 
 
 </td></tr>
@@ -44,6 +64,17 @@ Description
 
 </th></tr></thead>
 <tbody><tr><td>
+
+[LoadOptions](./koatty_loader.loadoptions.md)
+
+
+</td><td>
+
+Optional behavior switches; every field is optional so the old API stays valid.
+
+
+</td></tr>
+<tr><td>
 
 [ResInterface](./koatty_loader.resinterface.md)
 

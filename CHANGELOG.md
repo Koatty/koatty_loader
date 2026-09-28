@@ -1,5 +1,19 @@
 # Changelog
 
+## Unreleased — Phase A–D completion
+
+- 可选 manifestFile 消费构建后的权威文件清单，执行前校验全部条目的真实路径、重复项与 SHA256；静态清单仍走安全扫描。
+
+本轮尚未发布；验收边界见根目录 `docs/audits/phase-ad-completion-2026-09-28.md`。
+
+## Unreleased (Phase A–D remediation)
+
+- 扫描目录、每个模块与缓存条目均以 realpath 校验根目录边界；越界路径直接拒绝，不再回退扫描整个项目。
+- 缓存 schema 升至 2，指纹覆盖目录成员与逐文件状态，修复保留旧时间戳新增文件漏扫。处理符号链接、不同扫描 ignore 与 macOS 临时路径别名。
+- 损坏缓存安全重扫；可通过 scanCache:false 关闭。生产预生成清单现已补齐，200 组件冷启动性能门槛仍未达到。
+
+迁移说明：`docs/migration/phase-d-router-hotpath.md`。尚未发布。
+
 ## 2.0.1
 
 ### Patch Changes

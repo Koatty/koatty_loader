@@ -9,7 +9,7 @@ Load modules from directories by glob pattern.
 **Signature:**
 
 ```typescript
-export declare function Load(loadDir: string[], baseDir?: string, fn?: callbackFunc, pattern?: string[], ignore?: string[]): ResInterface[];
+export declare function Load(loadDir: string[], baseDir?: string, fn?: callbackFunc, pattern?: string[], ignore?: string[], options?: LoadOptions): ResInterface[];
 ```
 
 ## Parameters
@@ -107,6 +107,22 @@ string\[\]
 </td><td>
 
 _(Optional)_ Glob ignore patterns; defaults to node\_modules, logs, static
+
+
+</td></tr>
+<tr><td>
+
+options
+
+
+</td><td>
+
+[LoadOptions](./koatty_loader.loadoptions.md)
+
+
+</td><td>
+
+_(Optional)_ Optional PERF-03 scan cache switches
 
 
 </td></tr>
