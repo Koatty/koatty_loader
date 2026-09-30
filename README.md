@@ -1,6 +1,8 @@
 # koatty_loader
 Efficient glob library for Koatty.
 
+> **v2.1.0** (koatty 5.0.0 family): scan directories are validated with realpath boundary checks (out-of-bounds paths are rejected instead of falling back to scanning the whole project); module loading integrates with per-app containers (`app.container`) and supports both default and named exports; dual-mode decorator adapter keeps TC39 field-initializer classes working alongside legacy decorators.
+
 
 ## Scan cache (PERF-03)
 
