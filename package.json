@@ -1,6 +1,6 @@
 {
   "name": "koatty_loader",
-  "version": "2.0.1",
+  "version": "2.1.0",
   "description": "Efficient glob library for Koatty.",
   "scripts": {
     "build": "pnpm run build:js && pnpm run build:dts && pnpm run build:doc && pnpm run build:cp",
@@ -48,7 +48,7 @@
     "picomatch": "^4.0.3"
   },
   "peerDependencies": {
-    "koatty_lib": "^1.6.0"
+    "koatty_lib": "^1.6.1"
   },
   "types": "./dist/index.d.ts"
 }
